@@ -40,9 +40,9 @@ cd SpotiDownloader
 
 2.Run the Tkinter GUI:
 
-'''bash
+```bash
 python3 dagui.py
-'''
+```
 
 - **Enter the Spotify playlist link and local storage location.**
 
