@@ -35,18 +35,18 @@ cd SpotiDownloader
   pip install -r requirements.txt
 ```
 
-3.Run the Tkinter GUI:
+3. Run the Tkinter GUI:
 
 ```bash
 python3 dagui.py
 ```
 
-4.Let the program run
+4. Let the program run
 
-- **Enter the Spotify playlist link and local storage location.**
+- ***Enter the Spotify playlist link and local storage location.***
 
-- **Click on the "Download" button to initiate the process.**
+- ***Click on the "Download" button to initiate the process.***
 
-- **The program will fetch the playlist details, create a CSV file, download music, and convert it to MP3.**
+- ***The program will fetch the playlist details, create a CSV file, download music, and convert it to MP3.***
 
-5. **Happy Offline Listening !**
+- **Happy Offline Listening!!**
