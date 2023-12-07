@@ -21,14 +21,6 @@ This is a comprehensive Spotify playlist downloader that allows users to downloa
 
 - **Conversion to MP3:** Converts downloaded music from MP4 to MP3 format using a dedicated script.
 
-## Prerequisites
-
-- Python 3.x
-- Install dependencies
-  
-  ```bash
-  pip install -r requirements.txt
-
 ## Installation
 
 1. Clone the repository:
@@ -38,11 +30,18 @@ git clone https://github.com/jmanoj0905/SpotiDownloader.git
 cd SpotiDownloader
 ```
 
-2.Run the Tkinter GUI:
+2. Install dependencies
+```bash
+  pip install -r requirements.txt
+```
+
+3.Run the Tkinter GUI:
 
 ```bash
 python3 dagui.py
 ```
+
+4.Let the program run
 
 - **Enter the Spotify playlist link and local storage location.**
 
@@ -50,4 +49,4 @@ python3 dagui.py
 
 - **The program will fetch the playlist details, create a CSV file, download music, and convert it to MP3.**
 
-*Happy Listening !*
+5. **Happy Offline Listening !**
