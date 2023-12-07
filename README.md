@@ -1,5 +1,4 @@
-# Spotify Playlist Downloader
-# SpotiDownloader
+# Spotify Playlist Downloader <SpotiDownloader>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/your-username/spotify-playlist-downloader)
 ![GitHub license](https://img.shields.io/github/license/your-username/spotify-playlist-downloader)
