@@ -4,10 +4,9 @@ import time
 
 def main():
     files_and_folders_to_delete = ["Songs", "songlist.csv"]
-    
-    time.sleep(5)
 
     for item in files_and_folders_to_delete:
+        time.sleep(1)
         try:
             if os.path.isfile(item):
                 os.remove(item)
