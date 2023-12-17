@@ -3,12 +3,7 @@ import re
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-import tkinter as tk
 from tkinter import messagebox
-
-
-#import os
-#from dotenv import load_dotenv
 
 def URLGET(link):
     global playlist_link
@@ -22,8 +17,6 @@ def main():
     auth_manager = SpotifyClientCredentials(client_id=SPOTIPY_CLIENT_ID,client_secret=SPOTIPY_CLIENT_SECRET)
     session = spotipy.Spotify(auth_manager=auth_manager)
 
-    #print(playlist_link)
-
     if match := re.match(r"https://open.spotify.com/playlist/(.*)\?", playlist_link):
         playlist_uri = match.groups()[0]
     else:
@@ -33,7 +26,7 @@ def main():
 
     tracks = session.playlist_tracks(playlist_uri)["items"]
 
-    with open('final.csv','w',encoding='utf-8',newline='') as file:
+    with open('songlist.csv','w',encoding='utf-8',newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['tracks','artist'])
         for track in tracks:
@@ -45,3 +38,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    

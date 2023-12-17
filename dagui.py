@@ -7,6 +7,8 @@ import webscrap
 from webscrap import *
 import convert
 from convert import *
+import cleaner
+from cleaner import *
 
 def download():
     global url_var, file_location_var
@@ -21,6 +23,8 @@ def download():
     
     LOCGET(file_location)
     convert.main()
+    
+    cleaner.main()
     
 window = tk.Tk()
 window.title("Spotify Downloader")
